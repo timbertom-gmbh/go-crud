@@ -1,0 +1,22 @@
+syntax = "proto3";
+package github.com.timbertomgmbh.listings;
+option go_package = "github.com/timbertom-gmbh/go-crud/rpc";
+
+message ListingOptions {
+  // Pagination
+  uint32 page = 1;
+  uint32 per_page = 2;
+  // Filtering
+  message FilterParam {
+    string field = 1;
+    string query = 2;
+  }
+  repeated FilterParam filters = 10;
+  // Sorting
+  enum Order {
+    ASC = 0;
+    DESC = 1;
+  }
+  string sort_field = 20;
+  Order sort_order = 21;
+}
