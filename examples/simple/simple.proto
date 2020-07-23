@@ -4,6 +4,7 @@ option go_package = "github.com/timbertom-gmbh/go-crud/examples/simple";
 
 message Simple {
   int32 some = 1;
-  string basic = 2;
-  string value = 3;
+  uint64 more = 2;
+  string basic = 3;
+  string value = 4;
 }

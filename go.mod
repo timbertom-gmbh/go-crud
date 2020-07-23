@@ -1,4 +1,4 @@
-module github.com/timbertom-gmbh/go-listings
+module github.com/timbertom-gmbh/go-crud
 
 go 1.14
 
